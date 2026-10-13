@@ -1,0 +1,6 @@
+{
+  "name": "Study Master - 500 Ahadith Collection",
+  "description": "خوبصورت اور مستند 500 احادیث مبارکہ اردو ترجمہ اور حوالہ کے ساتھ - پیشکش: خطیب ملک ڈیجیٹل ایمپائر (Khateeb Malik Digital Empire)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
