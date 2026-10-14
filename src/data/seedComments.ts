@@ -13,7 +13,7 @@ export const INITIAL_COMMENTS: Record<number, HadithComment[]> = {
     {
       id: 'c1-2',
       hadithId: 1,
-      userName: 'خطیب ملک',
+      userName: 'ایڈمن (Digital Empire #1)',
       text: 'تمام احادیث مبارکہ کی تصدیق صحیح بخاری و مسلم سے کر لی گئی ہے، اگر کسی بھائی کو کوئی شک یا غلطی محسوس ہو تو ضرور نشاندہی فرمائیں۔',
       type: 'general',
       timestamp: 'کل'

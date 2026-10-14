@@ -177,8 +177,8 @@ export const HadithCard: React.FC<HadithCardProps> = ({
           <span className="font-urdu font-medium text-stone-700 dark:text-stone-300">
             راوی: <span className="text-amber-800 dark:text-amber-400 font-semibold">{hadith.narratorUrdu}</span>
           </span>
-          <span className="text-xs text-stone-400 dark:text-stone-500">
-            حوالہ نمبر #{hadith.id}
+          <span className="text-xs text-stone-400 dark:text-stone-500 font-urdu">
+            حدیث کوڈ: {hadith.id}
           </span>
         </div>
 

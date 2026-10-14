@@ -144,7 +144,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ hadith, onClose, onToast
         <div className="mt-5 pt-3 border-t border-stone-200 dark:border-stone-800 text-center">
           <p className="font-urdu text-xs text-stone-500 dark:text-stone-400 flex items-center justify-center gap-1">
             <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-            <span>Deen e Haq (دینِ حق) | خطیب ملک ڈیجیٹل ایمپائر</span>
+            <span>Deen e Haq (دینِ حق) | ڈیجیٹل ایمپائر #1</span>
           </p>
         </div>
       </div>

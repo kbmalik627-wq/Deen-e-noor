@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, ArrowUp, Phone } from 'lucide-react';
+import { BookOpen, ArrowUp } from 'lucide-react';
 
 interface FooterProps {
   totalAhadith: number;
@@ -32,18 +32,11 @@ export const Footer: React.FC<FooterProps> = ({ totalAhadith }) => {
           <div className="text-center md:text-left flex flex-col items-center md:items-end gap-2">
             <div className="px-4 py-2 rounded-xl bg-stone-800/90 border border-emerald-900/60 text-emerald-300 font-urdu text-sm flex items-center gap-2">
               <span>پیشکش:</span>
-              <strong className="text-white">خطیب ملک ڈیجیٹل ایمپائر</strong>
-              <span className="px-1.5 py-0.2 rounded bg-emerald-800 text-white text-xs font-mono font-bold">#1</span>
+              <strong className="text-white text-base">ڈیجیٹل ایمپائر</strong>
+              <span className="px-2 py-0.5 rounded-full bg-emerald-700 text-white text-xs font-mono font-bold">#1</span>
             </div>
-            <a
-              href="tel:03267976823"
-              className="flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-mono transition-colors"
-            >
-              <Phone className="w-3 h-3" />
-              <span>0326 797 6823</span>
-            </a>
-            <p className="text-xs text-stone-500">
-              Khateeb Malik Digital Empire • All Rights Reserved
+            <p className="text-xs text-stone-500 font-mono">
+              Digital Empire #1 • All Rights Reserved
             </p>
           </div>
         </div>
