@@ -32,11 +32,11 @@ export const Footer: React.FC<FooterProps> = ({ totalAhadith }) => {
           <div className="text-center md:text-left flex flex-col items-center md:items-end gap-2">
             <div className="px-4 py-2 rounded-xl bg-stone-800/90 border border-emerald-900/60 text-emerald-300 font-urdu text-sm flex items-center gap-2">
               <span>پیشکش:</span>
-              <strong className="text-white text-base">ڈیجیٹل ایمپائر</strong>
+              <strong className="text-white text-base">کے ایم ڈیجیٹل ایمپائر</strong>
               <span className="px-2 py-0.5 rounded-full bg-emerald-700 text-white text-xs font-mono font-bold">#1</span>
             </div>
             <p className="text-xs text-stone-500 font-mono">
-              Digital Empire #1 • All Rights Reserved
+              KM Digital Empire #1 • All Rights Reserved
             </p>
           </div>
         </div>

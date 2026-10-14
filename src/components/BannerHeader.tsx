@@ -3,18 +3,89 @@ import React from 'react';
 export const BannerHeader: React.FC = () => {
   return (
     <div className="w-full bg-[#040705] border-b border-emerald-950/80 shadow-md">
-      {/* Main Banner Visual Container */}
       <div className="max-w-6xl mx-auto px-2 sm:px-4 py-2 sm:py-3 flex items-center justify-center">
-        <div
-          className="w-full max-w-4xl relative rounded-xl overflow-hidden border border-emerald-900/40 shadow-2xl bg-black block"
-        >
-          {/* Scalable SVG Banner: DIGITAL EMPIRE #1 */}
-          <img
-            src="/khateeb-malik-banner.svg"
-            alt="Digital Empire #1"
+        <div className="w-full max-w-4xl relative rounded-xl overflow-hidden border border-emerald-900/40 shadow-2xl bg-black">
+          {/* Inline Scalable SVG for KM DIGITAL EMPIRE #1 */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1600 320"
             className="w-full h-auto block select-none"
-            loading="eager"
-          />
+            aria-label="KM DIGITAL EMPIRE #1"
+          >
+            <defs>
+              {/* Dark textured background */}
+              <linearGradient id="bgGradKM" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#040705" />
+                <stop offset="50%" stop-color="#090e0b" />
+                <stop offset="100%" stop-color="#030504" />
+              </linearGradient>
+
+              {/* 3D Green Text Gradient */}
+              <linearGradient id="textGradKM" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#6ee7b7" />
+                <stop offset="25%" stop-color="#22c55e" />
+                <stop offset="75%" stop-color="#16a34a" />
+                <stop offset="100%" stop-color="#15803d" />
+              </linearGradient>
+
+              {/* Islamic Geometric Pattern */}
+              <pattern id="islamicPatternKM" width="100" height="100" patternUnits="userSpaceOnUse">
+                <path d="M50 0 L100 50 L50 100 L0 50 Z" fill="none" stroke="#22c55e" stroke-opacity="0.04" stroke-width="1.5" />
+                <circle cx="50" cy="50" r="24" fill="none" stroke="#22c55e" stroke-opacity="0.03" stroke-width="1.2" />
+                <polygon points="50,15 62,35 85,50 62,65 50,85 38,65 15,50 38,35" fill="none" stroke="#22c55e" stroke-opacity="0.04" stroke-width="1" />
+              </pattern>
+
+              {/* Ambient Center Glow */}
+              <radialGradient id="centerGlowKM" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#22c55e" stop-opacity="0.16" />
+                <stop offset="65%" stop-color="#15803d" stop-opacity="0.03" />
+                <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+              </radialGradient>
+
+              {/* Deep 3D Drop Shadow */}
+              <filter id="shadow3DKM" x="-10%" y="-10%" width="130%" height="130%">
+                <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.95" />
+                <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#022c22" flood-opacity="0.75" />
+              </filter>
+            </defs>
+
+            {/* Background Base */}
+            <rect width="100%" height="100%" fill="url(#bgGradKM)" />
+
+            {/* Islamic geometric pattern */}
+            <rect width="100%" height="100%" fill="url(#islamicPatternKM)" />
+
+            {/* Center green ambience glow */}
+            <rect x="150" y="20" width="1300" height="280" fill="url(#centerGlowKM)" />
+
+            {/* Top Right Badge #1 */}
+            <g transform="translate(1485, 55)">
+              <circle cx="0" cy="0" r="34" fill="#042f2e" stroke="#22c55e" stroke-width="3" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.8))" />
+              <circle cx="0" cy="0" r="28" fill="#064e3b" stroke="#4ade80" stroke-width="1.5" />
+              <text x="0" y="10" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="26" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+                #1
+              </text>
+            </g>
+
+            {/* 3D Extrusion Shadow Layers for KM DIGITAL EMPIRE */}
+            <g font-family="'Impact', 'Arial Black', 'Trebuchet MS', sans-serif" font-weight="900" font-size="96" text-anchor="middle" letter-spacing="4">
+              <text x="800" y="185" fill="#011f18" filter="url(#shadow3DKM)">KM DIGITAL EMPIRE</text>
+              <text x="800" y="182" fill="#023322">KM DIGITAL EMPIRE</text>
+              <text x="800" y="179" fill="#044a2c">KM DIGITAL EMPIRE</text>
+              <text x="800" y="176" fill="#056038">KM DIGITAL EMPIRE</text>
+              <text x="800" y="173" fill="#047857">KM DIGITAL EMPIRE</text>
+
+              {/* Top Face with Crisp Vibrant Green and Neon Highlight */}
+              <text x="800" y="170" fill="url(#textGradKM)" stroke="#86efac" stroke-width="2" stroke-linejoin="round">
+                KM DIGITAL EMPIRE
+              </text>
+            </g>
+
+            {/* Subtitle / Tagline below */}
+            <text x="800" y="238" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="22" fill="#4ade80" text-anchor="middle" letter-spacing="8" opacity="0.9" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">
+              OFFICIAL DIGITAL PLATFORM
+            </text>
+          </svg>
         </div>
       </div>
     </div>

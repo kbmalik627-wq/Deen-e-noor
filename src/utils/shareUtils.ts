@@ -11,7 +11,7 @@ export function formatHadithText(hadith: Hadith): string {
   if (hadith.lesson) {
     text += `درسِ حدیث: ${hadith.lesson}\n`;
   }
-  text += `\nمجموعہ: 500 مستند احادیث مبارکہ\nDeen e Haq (دینِ حق) | پیشکش: ڈیجیٹل ایمپائر #1 (Digital Empire #1)`;
+  text += `\nمجموعہ: 500 مستند احادیث مبارکہ\nDeen e Haq (دینِ حق) | پیشکش: کے ایم ڈیجیٹل ایمپائر (KM Digital Empire #1)`;
   return text;
 }
 
@@ -50,7 +50,7 @@ export function shareViaTelegram(hadith: Hadith) {
 }
 
 export function shareViaTwitter(hadith: Hadith) {
-  const text = `${hadith.urdu.slice(0, 180)}...\n\nحوالہ: ${hadith.book}\nDeen e Haq (دینِ حق) | ڈیجیٹل ایمپائر #1`;
+  const text = `${hadith.urdu.slice(0, 180)}...\n\nحوالہ: ${hadith.book}\nDeen e Haq (دینِ حق) | KM Digital Empire #1`;
   const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
   window.open(url, '_blank');
 }
