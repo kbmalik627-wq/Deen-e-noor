@@ -10,7 +10,7 @@ import { HadithOfDay } from './components/HadithOfDay';
 import { ShareModal } from './components/ShareModal';
 import { Toast } from './components/Toast';
 import { Footer } from './components/Footer';
-import { BookOpen, Search, Bookmark, ChevronLeft, ChevronRight, Sparkles, FilterX, AlertCircle, RefreshCw } from 'lucide-react';
+import { BookOpen, Search, Bookmark, ChevronLeft, ChevronRight, Sparkles, FilterX, AlertCircle, RefreshCw, Info } from 'lucide-react';
 
 // Safe localStorage access for sandboxed iframes
 const safeStorage = {
@@ -416,6 +416,21 @@ function MainApp() {
             />
           </div>
         )}
+
+        {/* Starting Important Notice for Readers (Only once at the starting as requested) */}
+        <div className="mb-6 p-4 rounded-2xl bg-amber-100/70 dark:bg-stone-900 border border-amber-300/80 dark:border-amber-800/60 shadow-xs flex items-start gap-3">
+          <div className="w-8 h-8 rounded-full bg-amber-200 dark:bg-amber-950 text-amber-800 dark:text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
+            <Info className="w-4 h-4" />
+          </div>
+          <div className="flex-1 text-right">
+            <h3 className="font-urdu font-bold text-amber-950 dark:text-amber-300 text-sm md:text-base">
+              قارئینِ کرام کے لیے ضروری گزارش:
+            </h3>
+            <p className="font-urdu text-xs md:text-sm text-stone-700 dark:text-stone-300 mt-1 leading-relaxed">
+              اگر آپ احادیث مبارکہ پڑھتے ہوئے کسی بھی حدیث کے عربی متن، اردو ترجمہ یا حوالہ میں کوئی غلطی، املا یا کتابت کا سہو پائیں تو برائے مہربانی اس حدیث کے نیچے دیے گئے <strong>"کمنٹ"</strong> کے آپشن کے ذریعے ضرور مطلع فرما دیں تاکہ فوری تصحیح کی جا سکے، جزاکم اللہ خیراً و شکریہ۔
+            </p>
+          </div>
+        </div>
 
         {/* Status Bar */}
         <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-3 border-b border-stone-200/60 dark:border-stone-800">

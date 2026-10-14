@@ -11,9 +11,7 @@ import {
   Volume2,
   BookOpen,
   Heart,
-  MessageSquare,
-  AlertCircle,
-  Info
+  MessageSquare
 } from 'lucide-react';
 
 interface HadithCardProps {
@@ -190,23 +188,6 @@ export const HadithCard: React.FC<HadithCardProps> = ({
         )}
       </div>
 
-      {/* REQUIRED NOTE AT END OF EVERY HADITH (قارئین کے لیے خصوصی نوٹ) */}
-      <div className="mt-4 p-3 rounded-xl bg-amber-100/60 dark:bg-stone-800/80 border border-amber-300/60 dark:border-stone-700/80 text-xs md:text-sm font-urdu text-stone-800 dark:text-stone-200 flex items-start justify-between gap-2">
-        <div className="flex items-start gap-2">
-          <Info className="w-4 h-4 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
-          <p className="leading-relaxed">
-            <strong className="text-amber-900 dark:text-amber-300 ml-1">ضروری نوٹ:</strong>
-            اگر آپ یہ حدیث پڑھتے ہوئے عربی متن، اردو ترجمہ یا حوالہ میں کوئی غلطی یا کتابت کا سہو پائیں تو برائے مہربانی کمنٹ کر کے مطلع فرما دیں، شکریہ۔
-          </p>
-        </div>
-        <button
-          onClick={() => setIsCommentsOpen(true)}
-          className="shrink-0 px-2.5 py-1 rounded-lg bg-amber-200/80 dark:bg-amber-950/80 hover:bg-amber-300 dark:hover:bg-amber-900 text-amber-900 dark:text-amber-200 text-xs font-semibold transition-colors flex items-center gap-1"
-        >
-          <AlertCircle className="w-3 h-3 text-amber-700 dark:text-amber-400" />
-          <span>کمنٹ کریں</span>
-        </button>
-      </div>
 
       {/* Bottom Action Toolbar: Like, Comment, Copy, Share, Bookmark, Audio */}
       <div className="mt-4 pt-3.5 flex flex-wrap items-center justify-between gap-2 border-t border-stone-200/60 dark:border-stone-800">
